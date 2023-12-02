@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title> Natin Website Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="css/fotos/natinlogo.png"  ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Over ICT</a></li>
+                    <li><a href="specialisatie.html">Specialisatie</a></li>
+                    <li><a href="Programma.html">Programma</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <h1>Over ICT</h1>
+    </section>
+
+<!--------Over ICT info-------->
+
+<section class="hoe-ict">
+    <div class="row">
+        <div class="over-col">
+            <input id="ch-IB" type="checkbox">
+            <h1>Wat is ICT ?</h1>
+            <p>ICT, oftewel Informatie- en Communicatietechnologie, omvat het gebruik van 
+                diverse technologische elementen, waaronder netwerken, computers, printers, 
+                telefoons, en zelfs apparaten zoals verkeerslichten en liften. Dit geheel wordt 
+                aangeduid als het ICT-systeem of informatiesysteem. Belangrijk om te benadrukken 
+                is dat ICT zich onderscheidt van de telecom, waar de focus ligt op het aanleggen van 
+                datasystemen. In de wereld van ICT draait het specifiek om de hardware en software 
+                die gebruikmaken van de telecominfrastructuur.
+            </p>
+            
+        </div>
+        <div class="over-col">
+            <img src="css/fotos/watisi.png">
+            
+
+        </div>
+    </div>
+</section>
+<section class="hoe-ict">
+    <div class="row">
+        <div class="over-col">
+            <img src="css/fotos/thinking.png">
+           
+        </div>
+        <div class="over-col">
+            <input id="ch" type="checkbox">
+            <h1>Hoe wordt je een ICT'er ?</h1>
+            <p>Natin ICT heet je van harte welkom! Voordat je je inschrijft voor onze uitstekende 
+                opleiding, dien je eerst een vooraanmelding te doorlopen. Dit vormt 
+                de allereerste stap op weg naar jouw deelname aan ons programma, en we begeleiden je 
+                graag gedurende dit proces.
+            </p>
+            <div class="lees-meer">
+                <p>De aankondiging van onze vooraanmelding vindt altijd plaats op onze officiële Facebook-pagina van Natin. We raden je ten zeerste aan deze pagina te volgen om belangrijke updates niet te missen. Na het succesvol voltooien van je vooraanmelding ontvang je van ons een bevestiging, wat een essentieel moment markeert in je inschrijvingsproces.<br><br>
+                   Hierna vragen we je om deel te nemen aan een intake-toets, waarin we je kennis en vaardigheden zullen beoordelen. Bij een positieve selectie op basis van je toetsresultaten volgt een intakegesprek om nader kennis te maken en eventuele vragen te beantwoorden. 
+                   Alle relevante details met betrekking tot de vooraanmelding, de toets en het intakegesprek worden helder gecommuniceerd bij de aankondiging op onze Facebook-pagina.<br><br> 
+                   We kijken ernaar uit je als student te verwelkomen bij Natin ICT en samen te bouwen aan een succesvolle toekomst!
+                </p>
+             <label for="ch" class="info-btn groene-btn">Lees Minder</label>
+            </div>
+            <label for="ch" class="info-btn groene-btn">Lees Meer</label>
+        </div>
+    </div>
+</section>
+
+<!-------footer--------------->
+
+<section class="footer">
+    <h4><img class= "ducks" src="css/fotos/duck.gif">Over Ons<img class= "ducks" src="css/fotos/duck.gif"></h4>
+    <p class="f-text">
+        Het Natin is een toonaangevend, ontwikkelingsgericht, dynamisch instituut<br>
+        dat beroepskader opleidt voor technische, natuurtechnische en laboratoriumsectoren<br>
+        die deel uitmaken van het bedrijfsleven, de dienstensector<br>
+        en de overheid van Suriname.
+    </p>
+    <div class="icons">
+            <a href="https://www.facebook.com/natinsuriname" target="_blank">
+             <i  class="fab fa-facebook"></i>
+            </a>
+    </div>
+</section>
+
+
+<!--------hieronder is er code voor het openen en sluiten van je menu in javascript------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function ShowMenu(){
+        navLinks.style.right = "0";
+    }
+    function HideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

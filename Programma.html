@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title> Natin Website Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="css/fotos/natinlogo.png"  ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Over ICT</a></li>
+                    <li><a href="specialisatie.html">Specialisatie</a></li>
+                    <li><a href="Programma.html">Programma</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <h1>Programma</h1>
+    </section>
+
+<!--------vakken overzicht-------->
+<section class="vakken">
+    <h1>Overzicht Vakken en Voortgangsnormen</h1>
+    <p class="f-text">In de volgende secties worden de vakken en hun bijbehorende voortgangsnormen voor elk leerjaar weergegeven.</p>
+
+    <div class="row">
+        <div class="vakken-col">
+            <p class="f-text"> 1e leerjaar MBI</p>
+            <img src="css/fotos/1e.jpg">
+            <div class="layer2">
+                <h3></h3>
+            </div>
+        </div>
+        <div class="vakken-col">
+            <p class="f-text"> 2e leerjaar MBI</p>
+            <img src="css/fotos/2e.jpg">
+            <div class="layer2">
+                <h3></h3>
+            </div>
+        </div>
+</section>
+<section class="vakken">
+    <div class="row">
+        <div class="vakken-col">
+            <p class="f-text"> 3e leerjaar AO</p>
+            <img src="css/fotos/3eAO.jpg">
+            <div class="layer2">
+                <h3></h3>
+            </div>
+        </div>
+        <div class="vakken-col">
+            <p class="f-text"> 3e leerjaar IB</p>
+            <img src="css/fotos/3eIB.jpg">
+            <div class="layer2">
+                <h3></h3>
+            </div>
+        </div>
+</section>
+<section class="vakken">
+    <div class="row">
+        <div class="vakken-col">
+            <p class="f-text"> 4e leerjaar AO</p>
+            <img src="css/fotos/4eAO.jpg">
+            <div class="layer2">
+                <h3></h3>
+            </div>
+        </div>
+        <div class="vakken-col">
+            <p class="f-text"> 4e leerjaar IB</p>
+            <img src="css/fotos/4eIB.jpg">
+            <div class="layer2">
+                <h3></h3>
+            </div>
+        </div>
+</section>
+<!-------footer--------------->
+
+<section class="footer">
+    <h4>Over Ons</h4>
+    <p class="f-text">
+        Het Natin is een toonaangevend, ontwikkelingsgericht, dynamisch instituut<br>
+        dat beroepskader opleidt voor technische, natuurtechnische en laboratoriumsectoren<br>
+        die deel uitmaken van het bedrijfsleven, de dienstensector<br>
+        en de overheid van Suriname.
+    </p>
+    <div class="icons">
+            <a href="https://www.facebook.com/natinsuriname" target="_blank">
+             <i  class="fab fa-facebook"></i>
+            </a>
+    </div>
+</section>
+
+
+<!--------hieronder is er code voor het openen en sluiten van je menu in javascript------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function ShowMenu(){
+        navLinks.style.right = "0";
+    }
+    function HideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

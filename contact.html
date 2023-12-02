@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title> Natin Website Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="rate-page.html"><img src="css/fotos/natinlogo.png"  ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="HideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Over ICT</a></li>
+                    <li><a href="specialisatie.html">Specialisatie</a></li>
+                    <li><a href="Programma.html">Programma</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <h1>Contact Gegevens</h1>
+    </section>
+
+<!--------Contact Gegevens-------->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7938.5531469819925!2d-55.22369351218202!3d5.816560700307228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d09cb6f9a6a3001%3A0xc2bcaf8bcf35a812!2sNatuurtechnisch%20Instituut%20(Natin-MBO)%20-%20Jaggenath%20Lachmonstraat!5e0!3m2!1snl!2s!4v1699556124046!5m2!1snl!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-ons">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i  class="fas fa-home"></i>
+                    <span>
+                        <h5>Jaggernath Lachmonstraat 180-182</h5>
+                        <p>Paramaribo, Suriname</p>
+                    </span>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+597 490579</h5>
+                        <p>Maandag tot Vrijdag, 7:00AM tot 1:45PM</p>
+                    </span>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>natindirectie@gmail.com</h5>
+                        <p>Stuur ons een bericht</p>
+                    </span>
+            </div>
+        </div>
+        <div class="contact-col">
+           <form action="https://formspree.io/f/xrgwwyez" method="POST">
+            <input type="text" name="naam" placeholder="Naam" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="onderwerp" placeholder="Onderwerp" required>
+            <textarea rows="8" name="message"  required></textarea>
+            <button type="Submit" class="info-btn groene-btn">Bericht Versturen</button>
+     
+           </form>
+        </div>
+    </div>
+
+</section>
+
+
+<!-------footer------------------->
+
+<section class="footer">
+    <h4>Over Ons</h4>
+    <p class="f-text">
+        Het Natin is een toonaangevend, ontwikkelingsgericht, dynamisch instituut<br>
+        dat beroepskader opleidt voor technische, natuurtechnische en laboratoriumsectoren<br>
+        die deel uitmaken van het bedrijfsleven, de dienstensector<br>
+        en de overheid van Suriname.
+    </p>
+    <div class="icons">
+            <a href="https://www.facebook.com/natinsuriname" target="_blank">
+            <i  class="fab fa-facebook"></i>
+            </a>
+            <a><img class= "sleepingduck" src="css/fotos/sleeping-duck.gif"></a>
+    </div>
+    
+</section>
+
+
+<!--------hieronder is er code voor het openen en sluiten van je menu in javascript------>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function ShowMenu(){
+        navLinks.style.right = "0";
+    }
+    function HideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
